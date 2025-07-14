@@ -1,0 +1,129 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --underweight:rgb(122, 82, 6);
+    --normal:rgb(91, 186, 91);
+    --overweight:rgb(20, 109, 157);
+    --obese:rgb(135, 16, 16);
+}
+body { background-color: rgb(59, 38, 54);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vh;
+    
+}
+h1{
+    align-items: center;
+}
+.container{
+    width: 100vh;
+    max-width: 100vh;
+    margin-left: 400px;
+
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 10px 15px rgb(39, 11, 33) ;
+    display: grid;
+    gap: 1rem;
+    border-radius: 5px;
+    border-radius: 12px solid gray;
+    font-family: cursive;
+}
+.calculator {
+    display: grid;
+    gap: 1rem;
+
+}
+.calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.calculator label {
+    flex: 0 1 120px;
+    font-weight: 700;
+
+}
+.calculator input {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 9px;
+    outline-color:#555 ;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+ .calculator button{
+    width: 50%;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: rgb(202, 163, 114);
+    color: rgb(101, 4, 192);
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+.calculator button:hover {
+    filter: brightness(130%);
+    scale: 0.98;
+    transition:  0.2s;
+    background-color: pink;
+}
+.calculator input:hover {
+    border-color: pink;
+    scale: 1.001;
+    transition:  0.1s;
+}
+.output {
+    text-align: center;
+}
+.output #bmi {
+    font-size: 4rem;
+}
+.output #desc strong {
+    text-transform: uppercase;
+}
+.bmi-scale {
+    display: flex;
+}
+.bmi-scale div{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    padding: 10px;
+}
+.bmi-scale h3{
+    color: slategray;
+    font-size: 0.85rem;
+
+}
+.underweight {
+    color: var(--underweight);
+    scale: 1.5;
+  }
+  
+  .healthy {
+    color: var(--normal);
+    scale: 1.5;
+  
+    
+
+    
+  }
+  
+  .overweight {
+    color: var(--overweight);
+    scale: 1.5;
+  }
+  
+  .obese {
+    color: var(--obese);
+    scale: 1.5;
+  }
